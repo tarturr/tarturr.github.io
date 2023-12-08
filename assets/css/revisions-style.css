@@ -42,8 +42,8 @@ body {
 }
 
 #buttons a {
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
 
     margin: 25px;
 
@@ -51,7 +51,7 @@ body {
     align-items: center;
     justify-content: center;
 
-    font: 2.5em "comfortaa";
+    font: 2em "comfortaa";
     color: white;
     text-shadow: 2px 2px black;
     text-decoration: none;
@@ -69,7 +69,7 @@ body {
 
 #buttons .enabled:hover {
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.75);
-    font-size: 3.5em;
+    font-size: 3em;
     transform: translateY(-15px);
 }
 
