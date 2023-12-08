@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "comfortaa";
+    src: url("../fonts/Comfortaa-Regular.ttf");
+}
+
+:root {
+    --disabled-button: #8a9aa4;
+    --disabled-button-shadow: #58666a;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#title {
+    width: 100vw;
+    height: 15vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+
+    font: 2.5em "comfortaa";
+    user-select: none;
+
+    box-shadow: 0 2px 10px;
+    z-index: 2;
+}
+
+#buttons {
+    width: 100vw;
+    height: 85vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#buttons a {
+    width: 30%;
+    min-width: 300px;
+    height: 75%;
+    min-height: 300px;
+
+    margin: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font: 2.5em "comfortaa";
+    color: white;
+    text-shadow: 2px 2px black;
+    background-color: var(--disabled-button);
+
+    border-radius: 20px;
+    box-shadow: 0 10px var(--disabled-button-shadow), 0 15px 15px black;
+}
+
+#buttons .nature {
+    box-shadow: 0 10px var(--disabled-button-shadow), 0 10px 15px black;
+    background: url("../img/nature.jpg") no-repeat center;
+    background-size: cover;
+}
+
+#buttons .work {
+    background: url("../img/work.png") no-repeat center;
+}
+
+#buttons .work::after {
+    content: '(non publié)';
+    margin-left: 15px;
+}
+
+#buttons .technique {
+    background: url("../img/technique.jpg") no-repeat center;
+}
+
+#buttons .technique::after {
+     content: '(non publié)';
+     margin-left: 15px;
+ }
