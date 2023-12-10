@@ -80,14 +80,14 @@ body {
     border-bottom: solid 12px #175417;
 }
 
+#buttons .technique {
+    background-color: #265a8d;
+    border-bottom: solid 12px #173654;
+}
+
 #buttons .work::after {
     content: '(non publié)';
     margin-left: 15px;
-}
-
-#buttons .technique::after {
-     content: '(non publié)';
-     margin-left: 15px;
 }
 
 footer {
